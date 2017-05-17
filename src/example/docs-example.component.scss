@@ -1,0 +1,47 @@
+
+.example-viewer {
+  margin: 4px;
+  margin-top: 32px;
+  border: 1px solid rgba(0,0,0,.03);
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+  
+  > .example-viewer-title {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 8px 16px;
+    color: rgba(0,0,0,.54);
+    background: rgba(0,0,0,.03);
+
+    span.spacer {
+      flex: 1 1 auto;
+    }
+
+    button {
+      min-width: 44px
+    }
+  }
+  > .example-viewer-source {
+    /deep/ .mat-tab-body-wrapper {
+      display: block;
+      width: 100%;
+      padding: 0;
+      box-sizing: border-box;
+    }
+  }
+  > .example-viewer-debug {
+    display: block;
+    width: 100%;
+    padding: 16px 32px;
+    box-sizing: border-box;
+    border-top: 1px solid #f1f1f1;
+    background: rgba(0,0,0,.03);
+  }
+  > .example-viewer-body {
+    display: block;
+    width: 100%;
+    padding: 32px 16px;
+    box-sizing: border-box;
+    border-top: 1px solid #f1f1f1;
+  }
+}

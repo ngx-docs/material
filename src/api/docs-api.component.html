@@ -1,0 +1,22 @@
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">
+        <h3>
+          {{title}}
+        </h3>
+      </th>
+    </tr>
+    <tr>
+      <th *ngFor="let name of header">
+        {{name}}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of body">
+      <td>{{row.name}}</td>
+      <td>{{row.description}}</td>
+    </tr>
+  </tbody>
+</table>

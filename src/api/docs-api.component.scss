@@ -1,0 +1,48 @@
+docs-api {
+  display: flex;
+  width: 99.9%;
+  margin: 0 0 32px;
+  margin-top: 32px;
+  box-shadow: 0 2px 2px rgba(0,0,0,.24), 0 0 2px rgba(0,0,0,.12);
+  box-sizing: border-box;
+
+  table {
+    width: 100%;
+    box-sizing: border-box;
+    border-spacing: 0px;
+    border-collapse: collapse;
+
+    > thead {
+      padding: 8px 16px;
+      color: rgba(0,0,0,.54);
+      background: rgba(0,0,0,.03);
+
+      > tr {
+        &:first-child {
+          background: transparent;
+        }
+        > th {
+          font-weight: 400;
+          padding: 13px 32px;
+          text-align: left;
+
+          &:first-child {
+            width: 260px;
+          }
+        }
+      }
+    }
+
+    > tbody {
+      > tr {
+        > td {
+          border: 1px solid rgba(0,0,0,.03);
+          padding: 13px 32px;
+          &:first-child {
+            width: 260px;
+          }
+        }
+      }
+    }
+  }
+}
