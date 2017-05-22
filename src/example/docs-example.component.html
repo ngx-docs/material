@@ -9,9 +9,9 @@
   <!-- source -->
   <div class="example-viewer-source" *ngIf="view.code.basic === true">
     <md-tab-group >
-      <md-tab label="HTML"><prism-highlight language="html">{{html}}</prism-highlight></md-tab>
-      <md-tab label="TS"><prism-highlight language="typescript">{{ts}}</prism-highlight></md-tab>
-      <md-tab label="CSS"><prism-highlight language="css">{{css}}</prism-highlight></md-tab> -->
+      <md-tab label="HTML"><prism-highlight [language]="'html'">{{html}}</prism-highlight></md-tab>
+      <md-tab label="TS"><prism-highlight [language]="'typescript'">{{ts}}</prism-highlight></md-tab>
+      <md-tab label="CSS"><prism-highlight [language]="'css'">{{css}}</prism-highlight></md-tab>
     </md-tab-group>
   </div>
   <!-- body -->
