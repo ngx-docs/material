@@ -1,7 +1,10 @@
 // Karma configuration
 // Generated on Mon Mar 20 2017 15:06:42 GMT+0100 (CET)
 
-const webpackConfig = require('./webpack.test.config.js');
+const nodeResolve = require('rollup-plugin-node-resolve');
+const commonjs = require('rollup-plugin-commonjs');
+const angular = require('rollup-plugin-angular');
+const typescript = require('rollup-plugin-typescript');
 
 module.exports = function(config) {
   config.set({
@@ -17,12 +20,14 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
+      'test/*.ts',
+      'src/*.spec.ts'
     ],
 
     plugins: [
-      require('karma-webpack'),
       require('karma-coverage'),
       require('karma-chrome-launcher'),
+      require('karma-rollup-plugin'),
       require('karma-jasmine')
     ],    
 
@@ -30,14 +35,32 @@ module.exports = function(config) {
     exclude: [
     ],
 
-    webpack: webpackConfig,
-    webpackServer: {
-      noInfo: true
-    },
-
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      'test/*.ts': ['rollup'],
+      'src/*.spec.ts': ['rollup']
+    },
+
+    rollupPreprocessor: {
+      context: 'this',
+      // will help to prevent conflicts between different tests entries
+      moduleName: '@ngx-docs/material',
+      format: 'iife',
+      sourceMap: 'inline',
+      // rollup settings. See Rollup documentation
+      plugins: [
+        angular(),
+        typescript({
+          typescript: require('./node_modules/typescript')
+        }),
+        commonjs(),
+        nodeResolve({
+          jsnext: true,
+          browser: true,
+          extensions: [ '.js', '.json', 'html']
+        })
+      ],
     },
 
     // test results reporter to use
