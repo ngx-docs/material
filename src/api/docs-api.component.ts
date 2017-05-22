@@ -2,9 +2,11 @@ import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 import { DocsApiInterface } from './docs-api.interface';
 
+import template from './docs-api.component.html';
+
 @Component({
   selector: 'docs-api',
-  template: require('./docs-api.component.html'),
+  template,
   encapsulation: ViewEncapsulation.None
 })
 export class DocsApiComponent implements OnInit {
