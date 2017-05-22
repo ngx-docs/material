@@ -1,10 +1,13 @@
+// angular core
 import { Component, ElementRef, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
-
+// get default features for component
 import { DocsClass } from './../docs.class';
+// import template from html file
+import template from './docs-example.component.html';
 
 @Component({
   selector: 'docs-example',
-  template: require('./docs-example.component.html'),
+  template,
   encapsulation: ViewEncapsulation.None
 })
 export class DocsExampleComponent extends DocsClass implements OnInit {
@@ -22,6 +25,5 @@ export class DocsExampleComponent extends DocsClass implements OnInit {
     super();
   }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 }
