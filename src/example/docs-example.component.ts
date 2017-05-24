@@ -6,9 +6,9 @@ import { DocsClass } from './../docs.class';
 import template from './docs-example.component.html';
 
 @Component({
+  encapsulation: ViewEncapsulation.None,
   selector: 'docs-example',
-  template,
-  encapsulation: ViewEncapsulation.None
+  template
 })
 export class DocsExampleComponent extends DocsClass implements OnInit {
 
