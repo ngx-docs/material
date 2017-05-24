@@ -1,4 +1,4 @@
-import angular from 'rollup-plugin-angular';
+// import angular from 'rollup-plugin-angular';
 import commonjs from 'rollup-plugin-commonjs';
 import html from 'rollup-plugin-html';
 import nodeResolve from 'rollup-plugin-node-resolve';
@@ -14,14 +14,17 @@ export default {
   moduleName: '@ngx-docs/material',
   onwarn,
   plugins: [
-    angular(),
+    // angular(),
     commonjs({
       namedExports: {
         'node_modules/rxjs/**': ['named']
       }
     }),
     html({
-      include: '**/*.html'
+      include: '**/*.html',
+      htmlMinifierOptions: {
+        caseSensitive: true // need to do not lower letter
+      }
     }),
     nodeResolve({
       // use "es2015" field for ES2015 modules with ES2015 code,
