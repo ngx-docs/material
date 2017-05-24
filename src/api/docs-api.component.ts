@@ -5,9 +5,9 @@ import { DocsApiInterface } from './docs-api.interface';
 import template from './docs-api.component.html';
 
 @Component({
+  encapsulation: ViewEncapsulation.None,
   selector: 'docs-api',
-  template,
-  encapsulation: ViewEncapsulation.None
+  template
 })
 export class DocsApiComponent implements OnInit {
 
