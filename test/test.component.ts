@@ -1,8 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import template from './test.component.html';
+
 @Component({
   selector: 'test-component',
-  templateUrl: './test.component.html'
+  template
 })
 export class TestComponent implements OnInit {
   language = 'html';
