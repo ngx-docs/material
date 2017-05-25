@@ -1,6 +1,6 @@
 {
   "name": "@ngx-docs/material",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Angular 2+ Components to create documentation on Angular Material.",
   "author": "Ścibor Rudnicki <scibor.rudnicki@wwwdev.io> (http://ngx-docs.wwwwdev.io)",
   "homepage": "https://github.com/ngx-docs/material#readme",
