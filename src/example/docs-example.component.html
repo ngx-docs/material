@@ -1,21 +1,29 @@
 <div class="example-viewer">
+
   <!-- title -->
   <div class="example-viewer-title">
     {{title}}
     <span class="spacer"></span>
-    <button md-button (click)="viewCode('basic')" mdTooltip="View code"><md-icon>code</md-icon></button>
-    <button md-button (click)="debugCode('basic') === true ? false : true" mdTooltip="Debug code"><md-icon>bug_report</md-icon></button>
+    <button md-button (click)="viewCode('basic')" mdTooltip="View code">
+      <md-icon>code</md-icon>
+    </button>
+    <button md-button (click)="debugCode('basic')" mdTooltip="Debug code">
+      <md-icon>bug_report</md-icon>
+    </button>
   </div>
+
   <!-- source -->
   <div class="example-viewer-source" *ngIf="view.code.basic === true">
     <md-tab-group >
-      <md-tab label="HTML"><prism-highlight [language]="'html'">{{html}}</prism-highlight></md-tab>
-      <md-tab label="TS"><prism-highlight [language]="'typescript'">{{ts}}</prism-highlight></md-tab>
-      <md-tab label="CSS"><prism-highlight [language]="'css'">{{css}}</prism-highlight></md-tab>
+      <md-tab label="HTML" *ngIf="html"><prism-highlight [language]="'html'">{{html}}</prism-highlight></md-tab>
+      <md-tab label="TS" *ngIf="ts" ><prism-highlight [language]="'ts'">{{ts}}</prism-highlight></md-tab>
+      <md-tab label="CSS" *ngIf="css" ><prism-highlight [language]="'css'">{{css}}</prism-highlight></md-tab>
     </md-tab-group>
   </div>
+
   <!-- body -->
   <div class="example-viewer-body"><ng-content select=".body"></ng-content></div>
+
   <!-- debug -->
   <div class="example-viewer-debug" *ngIf="view.debug.basic === true"><ng-content select=".debug"></ng-content></div>
 </div>
