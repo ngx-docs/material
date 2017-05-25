@@ -5,8 +5,10 @@ Angular 2+ Components to create documentation on Angular Material.
 ## Table of contents
 * [Installation](#installation)
 * [Usage](#usage)
-* [Versioning](#versioning)
-* [Git commit](#git-commit)
+* [Style guide](#style-guide)
+* Git
+  * [Commit](#commit)
+  * [Versioning](#versioning)
 * [License](#license)
 * [Donate](#donate)
 
@@ -16,13 +18,26 @@ Angular 2+ Components to create documentation on Angular Material.
 To install, run:
 
 ```bash
-npm install @ngx-docs/material --save
+npm install @angular/material @ngx-docs/material --save
 ```
 
 ## Usage
 
+```typescript
 
-## Versioning
+```
+
+## Style guide
+
+Trying as much as possible to apply [Angular style guide](https://angular.io/docs/ts/latest/guide/style-guide.html) 
+
+## GIT
+
+### Commit
+- AngularJS Git Commit Message Conventions https://gist.github.com/stephenparish/9941e89d80e2bc58a153
+- http://karma-runner.github.io/0.10/dev/git-commit-msg.html
+
+### Versioning
 Semantic Versioning 2.0.0 http://semver.org/
 
 **Given a version number MAJOR.MINOR.PATCH, increment the:**   
@@ -39,9 +54,6 @@ How do I know when to release 1.0.0?
 
 >If your software is being used in production, it should probably already be 1.0.0. If you have a stable API on which users have come to depend, you should be 1.0.0. If you’re worrying a lot about backwards compatibility, you should probably already be 1.0.0.
 
-## GIT commit
-- AngularJS Git Commit Message Conventions https://gist.github.com/stephenparish/9941e89d80e2bc58a153
-- http://karma-runner.github.io/0.10/dev/git-commit-msg.html
 
 ## License
 
