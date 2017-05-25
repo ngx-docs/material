@@ -1,4 +1,25 @@
-<div>test div</div>
-<prism-highlight [language]="language">
-  {{example}}
-</prism-highlight>
+<docs-api title="@Input" [header]="header" [body]="body.input"></docs-api>
+
+<docs-example [css]="css">
+  <div class="body">
+    body-css
+  </div>
+</docs-example>
+
+<docs-example [html]="html">
+  <div class="body">
+    body-html
+  </div>
+</docs-example>
+
+<docs-example [title]="title">
+  <div class="body">
+    body-title
+  </div>
+</docs-example>
+
+<docs-example [ts]="ts">
+  <div class="body">
+    body-ts
+  </div>
+</docs-example>
