@@ -1,5 +1,6 @@
 
 // external
+import { MaterialModule } from '@angular/material';
 import { NO_ERRORS_SCHEMA, ViewChild } from '@angular/core';
 import { BrowserDynamicTestingModule, platformBrowserDynamicTesting } from '@angular/platform-browser-dynamic/testing';
 import { By } from '@angular/platform-browser';
@@ -22,7 +23,10 @@ describe('DocsApiComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [DocsModule]
+      imports: [
+        DocsModule,
+        MaterialModule
+      ]
     }).compileComponents();
   }));
 
@@ -41,7 +45,7 @@ describe('DocsApiComponent', () => {
     expect(comp).toBeTruthy();
   }));
   it('should have table', async(() => {
-    console.info(nativeElement);
+    // console.info(nativeElement);
     expect(nativeElement.querySelector('table')).toBeTruthy();
   }));
   it('should have div container', async(() => {
