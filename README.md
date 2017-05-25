@@ -18,7 +18,7 @@ Angular 2+ Components to create documentation on Angular Material.
 To install, run:
 
 ```bash
-npm install @angular/material @ngx-docs/material --save
+npm install @angular/material @ngx-prism/core@latest @ngx-docs/material --save
 ```
 
 ## Usage
