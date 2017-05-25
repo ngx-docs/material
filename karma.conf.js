@@ -22,7 +22,8 @@ module.exports = function(config) {
     // list of files / patterns to load in the browser
     files: [
       'test/*.ts',
-      'src/*.spec.ts'
+      'src/*.spec.ts',
+      'src/**/*.spec.ts'
     ],
 
     plugins: [
@@ -39,7 +40,8 @@ module.exports = function(config) {
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
       'test/*.ts': ['rollup'],
-      'src/*.spec.ts': ['rollup']
+      'src/*.spec.ts': ['rollup'],
+      'src/**/*.spec.ts': ['rollup']
     },
 
     rollupPreprocessor: {
