@@ -15,7 +15,7 @@ import PrismModule from '@ngx-prism/core';
 
 // internal
 import { TestComponent } from './test.component';
-import { DocsApiComponent, DocsExampleComponent } from './../src';
+import { DocsMaterialApiComponent, DocsMaterialExampleComponent } from './../src';
 
 beforeAll(() => {
   TestBed.resetTestEnvironment();
@@ -32,8 +32,8 @@ describe('TestComponent', () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        DocsApiComponent,
-        DocsExampleComponent,
+        DocsMaterialApiComponent,
+        DocsMaterialExampleComponent,
         TestComponent
       ],
       imports: [
