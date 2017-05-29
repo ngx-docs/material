@@ -8,7 +8,7 @@ import { By } from '@angular/platform-browser';
 import { TestBed, async, inject, ComponentFixture } from '@angular/core/testing';
 
 import PrismModule from '@ngx-prism/core';
-import { DocsExampleComponent } from './docs-example.component';
+import { DocsMaterialExampleComponent } from './docs-material-example.component';
 
 beforeAll(() => {
   TestBed.resetTestEnvironment();
@@ -17,15 +17,15 @@ beforeAll(() => {
 
 describe('DocsExampleComponent', () => {
 
-  let comp: DocsExampleComponent;
+  let comp: DocsMaterialExampleComponent;
   let debugElement: any;
-  let fixture: ComponentFixture<DocsExampleComponent>;
+  let fixture: ComponentFixture<DocsMaterialExampleComponent>;
   let nativeElement: any;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [
-        DocsExampleComponent
+        DocsMaterialExampleComponent
       ],
       imports: [
         CommonModule,
@@ -37,7 +37,7 @@ describe('DocsExampleComponent', () => {
 
   // synchronous beforeEach
   beforeEach(() => {
-    fixture = TestBed.createComponent(DocsExampleComponent);
+    fixture = TestBed.createComponent(DocsMaterialExampleComponent);
 
     // get from fixture
     comp = fixture.componentInstance;
