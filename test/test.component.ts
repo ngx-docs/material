@@ -2,7 +2,7 @@ import { Component, ElementRef, OnInit, Input, ViewChild } from '@angular/core';
 
 import template from './test.component.html';
 // get default features for component
-import { DocsClass } from './../src/docs.class';
+import { DocsClass } from './../src/docs-material.class';
 
 @Component({
   selector: 'test-component',
