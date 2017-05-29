@@ -3,10 +3,10 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MaterialModule } from '@angular/material';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import PrismModule from '@ngx-prism/core';
+import { PrismModule } from '@ngx-prism/core';
 
 // internal
-import { DocsModule } from './..';
+import { DocsMaterialModule } from './..';
 import { TestComponent } from './test.component';
 
 @NgModule({
@@ -14,13 +14,13 @@ import { TestComponent } from './test.component';
     TestComponent
   ],
   exports: [
-    MaterialModule,
-    DocsModule
+    DocsMaterialModule,
+    MaterialModule
   ],
   imports: [
     BrowserAnimationsModule,
     CommonModule,
-    DocsModule,
+    DocsMaterialModule,
     MaterialModule,
     PrismModule
   ]
