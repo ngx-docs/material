@@ -1,1 +1,1 @@
-export * from './docs-example.component';
+export * from './docs-material-example.component';
