@@ -1,2 +1,2 @@
-export * from './docs-api.component';
-export * from './docs-api.interface';
+export * from './docs-material-api.component';
+export * from './docs-material-api.interface';
