@@ -1,4 +1,6 @@
 docs-api {
+  $firstTd: 110px;
+
   display: flex;
   width: 99.9%;
   margin: 0 0 32px;
@@ -31,7 +33,7 @@ docs-api {
           text-align: left;
 
           &:first-child {
-            width: 260px;
+            width: $firstTd;
           }
         }
       }
@@ -43,7 +45,7 @@ docs-api {
           border: 1px solid rgba(0,0,0,.03);
           padding: 13px 32px;
           &:first-child {
-            width: 260px;
+            width: $firstTd;
           }
         }
       }
