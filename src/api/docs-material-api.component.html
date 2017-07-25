@@ -1,7 +1,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="2">
+      <th [attr.colspan]="header.length">
         <h3 [innerHTML]="title"></h3>
       </th>
     </tr>
@@ -11,8 +11,7 @@
   </thead>
   <tbody>
     <tr *ngFor="let row of body">
-      <td [innerHTML]="row.name"></td>
-      <td [innerHTML]="row.description"></td>
+      <td *ngFor="let name of header" [innerHTML]="row[name.toLowerCase()]"></td>
     </tr>
   </tbody>
 </table>
