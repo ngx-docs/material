@@ -2,17 +2,17 @@
   <thead>
     <tr>
       <th [attr.colspan]="header.length">
-        <h3 ngx-markdown [innerHTML]="title"></h3>
-        <p *ngIf="description" ngx-markdown [innerHTML]="description"></p>
+        <h3 [innerHTML]="title"></h3>
+        <p *ngIf="description" [innerHTML]="description"></p>
       </th>
     </tr>
     <tr>
-      <th *ngFor="let name of header" ngx-markdown [innerHTML]="name"></th>
+      <th *ngFor="let name of header" [innerHTML]="name"></th>
     </tr>
   </thead>
   <tbody>
     <tr *ngFor="let row of body">
-      <td *ngFor="let name of header" ngx-markdown [innerHTML]="row[name.toLowerCase()]"></td>
+      <td *ngFor="let name of header" [innerHTML]="row[name.toLowerCase()]"></td>
     </tr>
   </tbody>
 </table>
