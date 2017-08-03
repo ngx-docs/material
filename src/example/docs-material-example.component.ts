@@ -1,14 +1,13 @@
-// angular core
+// external
 import { Component, ElementRef, Input, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 
-// get default features for component
-import { DocsClass } from './../docs-material.class';
-// import template from html file
-import template from './docs-material-example.component.html';
+// internal
+import { DocsClass } from './../docs-material.class'; // get default features for component
+import template from './docs-material-example.component.html'; // import template from html file
 
 @Component({
   encapsulation: ViewEncapsulation.None,
-  selector: 'docs-example',
+  selector: 'ngx-docs-example',
   template
 })
 export class DocsMaterialExampleComponent extends DocsClass implements OnInit {
