@@ -3,6 +3,7 @@
 Angular 2+ Components to create documentation on Angular Material.
 
 ## Table of contents
+* [ngx Packages](#ngx-packages)
 * [Installation](#installation)
 * [Usage](#usage)
 * [Style guide](#style-guide)
@@ -12,13 +13,19 @@ Angular 2+ Components to create documentation on Angular Material.
 * [License](#license)
 * [Donate](#donate)
 
+----
+
+## ngx Packages
+
+* [prism](https://github.com/ngx-prism)
+* [markdown](https://github.com/ngx-markdown)
 
 ## Installation
 
 To install, run:
 
 ```bash
-npm install @angular/material @ngx-prism/core@latest @ngx-docs/material --save
+npm install @angular/material @ngx-prism/core @ngx-markdown/core @ngx-docs/material --save
 ```
 
 ## Usage
@@ -29,7 +36,7 @@ npm install @angular/material @ngx-prism/core@latest @ngx-docs/material --save
 
 ## Style guide
 
-Trying as much as possible to apply [Angular style guide](https://angular.io/docs/ts/latest/guide/style-guide.html) 
+[Angular style guide](https://angular.io/docs/ts/latest/guide/style-guide.html) 
 
 ## GIT
 
